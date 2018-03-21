@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="loginService" name="loginService" class="com.xym.spring4.LoginService"/>
+    <bean id="loginResource" name="loginResource" class="com.xym.spring4.LoginResource">
+        <property name="loginService" ref="loginService"/>
+    </bean>
+</beans>

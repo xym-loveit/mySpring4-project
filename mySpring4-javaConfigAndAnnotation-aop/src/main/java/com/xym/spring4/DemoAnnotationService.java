@@ -1,0 +1,14 @@
+package com.xym.spring4;
+
+import org.springframework.stereotype.Service;
+
+/**
+ * @author xym
+ */
+@Service
+public class DemoAnnotationService {
+
+    @Action(name = "注解式拦截的add操作")
+    public void add() {
+    }
+}
